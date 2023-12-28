@@ -22,11 +22,12 @@ int main(void)
     // TODO: Calculate number of years until we reach threshold
 
     int years = 0;
-    do
+
+    while (start < end)
     {
         start = start + (start / 3) - (start / 4);
         years++;
-    } while (start < end);
+    }
 
     // TODO:Pprint number of years
 
